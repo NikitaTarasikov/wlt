@@ -1,0 +1,115 @@
+/*!
+Theme Name: wl-test-theme
+Theme URI: http://underscores.me/
+Author: Underscores.me
+Author URI: http://underscores.me/
+Description: Description
+Version: 1.0.0
+Tested up to: 5.4
+Requires PHP: 5.6
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: wl-test-theme
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+*/
+
+body,
+html{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family: sans-serif;
+}
+.car-img{
+    position: relative;
+    width: 500px;
+    height: 350px;
+    overflow: hidden;
+}
+.car-img img{
+	position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.header{
+	display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    padding: 10px 50px;
+    background: #fff;
+    color: #333;
+    max-width: 100%;
+    margin: auto;
+    margin-bottom: 50px;
+    border: 3px solid #333;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.car-characteristics__item--color{
+    background: #160e0e;
+    width: 30px;
+    height: 30px;
+    border-radius: 100px	
+}
+.car-characteristics__item{
+	margin-bottom: 10px;
+}
+.header-logo a{
+	font-size: 30px;
+    color: #fff;
+}
+.container{
+	max-width: 1200px;
+	padding: 0 10px;
+    margin: auto;
+}
+.car {
+	display: flex;
+    justify-content: space-between;
+}
+.car-right{
+	max-width: 50%;
+	padding-left: 50px;
+}
+.header-logo img{
+	max-width: 50px;
+}
+.index-car .car{
+	margin-bottom: 50px;
+}
+.car-right h2{
+	margin-top: 0;
+}
+@media(max-width: 990px){
+	.car{
+		flex-direction: column;
+	}
+	.car-img{
+		margin: auto;
+	}
+	.car-right {
+		max-width: 100%;
+		padding-left: 0px;
+	}
+}
+@media(max-width: 550px){
+	.car-img{
+		max-width: 100%;
+	}
+	.header{
+		padding: 10px;
+	}
+}
+
+@media(max-width: 450px){
+	.car-img{
+		height: 250px;
+	}
+}
